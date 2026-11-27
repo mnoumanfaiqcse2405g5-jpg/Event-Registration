@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Event Registration</h1>
+    <p>Register for our upcoming event!</p>
+
+    <form action="/register" method="POST">
+
+        <input type="text" name="name"
+        placeholder="Enter your Name" required>
+
+        <input type="email" name="email"
+        placeholder="Enter your Email" required>
+
+        <input type="tel" name="phone"
+        placeholder="Enter your Phone Number" required>
+
+        <select name="event" required>
+            <option value="">Select Event</option>
+            <option value="DevOps Workshop">DevOps Workshop</option>
+            <option value="Cloud Computing">Cloud Computing</option>
+            <option value="CI/CD Pipeline">CI/CD Pipeline</option>
+        </select>
+
+        <button type="submit">Register Now</button>
+
+    </form>
+</div>
+
+</body>
+</html>
